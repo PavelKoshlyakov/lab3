@@ -21,12 +21,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 public class CatControllerTest {
-    CatControllerTest(){
-    }
+//    CatControllerTest(){
+//    }
     @Autowired
     private MockMvc mvc;
-//    @MockBean
-//    private CatController catController;
+    @MockBean
+    private CatController catController;
     @Test
     public void getAllCatsTest() throws Exception {
         mvc.perform(get("/cat/get_all"))
