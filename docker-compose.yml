@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  db:
+    container_name: postgres_database
+    image: postgres:14-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: Animals
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+#    ports:
+#      - '5432:5432'
+volumes:
+  pgdata:
+
+#  pgadmin:
+#    container_name: pgadmin
+#    image: dpage/pgadmin4
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: pkoshlyakov1@yandex.ru
+#      PGADMIN_DEFAULT_PASSWORD: P911199p
+#    ports:
+#      - '5050:80'
