@@ -1,0 +1,6 @@
+kotiki\service\DTO\OwnershipDTO.class
+kotiki\service\IServices\IService.class
+kotiki\service\DTO\FriendshipDTO.class
+kotiki\service\Services\Service.class
+kotiki\service\DTO\CatDTO.class
+kotiki\service\DTO\OwnerDTO.class

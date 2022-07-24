@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: kotiki.controllers.controllers.OwnershipControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.095 s <<< FAILURE! - in kotiki.controllers.controllers.OwnershipControllerTest
+addOwnershipTest  Time elapsed: 0.021 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: could not extract ResultSet; nested exception is org.hibernate.exception.GenericJDBCException: could not extract ResultSet
+	at kotiki.controllers.controllers.OwnershipControllerTest.addOwnershipTest(OwnershipControllerTest.java:54)
+Caused by: org.springframework.orm.jpa.JpaSystemException: could not extract ResultSet; nested exception is org.hibernate.exception.GenericJDBCException: could not extract ResultSet
+	at kotiki.controllers.controllers.OwnershipControllerTest.addOwnershipTest(OwnershipControllerTest.java:54)
+Caused by: org.hibernate.exception.GenericJDBCException: could not extract ResultSet
+	at kotiki.controllers.controllers.OwnershipControllerTest.addOwnershipTest(OwnershipControllerTest.java:54)
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: текущее значение (currval) для последовательности "ownership_id_seq" ещё не определено в этом сеансе
+	at kotiki.controllers.controllers.OwnershipControllerTest.addOwnershipTest(OwnershipControllerTest.java:54)
+

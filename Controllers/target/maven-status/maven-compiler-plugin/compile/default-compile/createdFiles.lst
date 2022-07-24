@@ -1,0 +1,5 @@
+kotiki\controllers\controllers\OwnerController.class
+kotiki\controllers\Application.class
+kotiki\controllers\controllers\CatController.class
+kotiki\controllers\controllers\OwnershipController.class
+kotiki\controllers\controllers\FriendshipController.class

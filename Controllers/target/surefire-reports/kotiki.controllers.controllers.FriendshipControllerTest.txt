@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: kotiki.controllers.controllers.FriendshipControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.114 s <<< FAILURE! - in kotiki.controllers.controllers.FriendshipControllerTest
+deleteFriendshipTest  Time elapsed: 0.565 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at kotiki.controllers.controllers.FriendshipControllerTest.deleteFriendshipTest(FriendshipControllerTest.java:41)
+Caused by: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at kotiki.controllers.controllers.FriendshipControllerTest.deleteFriendshipTest(FriendshipControllerTest.java:41)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at kotiki.controllers.controllers.FriendshipControllerTest.deleteFriendshipTest(FriendshipControllerTest.java:41)
+Caused by: org.postgresql.util.PSQLException: 
+ОШИБКА: UPDATE или DELETE в таблице "cats" нарушает ограничение внешнего ключа "fktpt1pf6g7pv578kllcq8v1f7y" таблицы "ownership"
+  Подробности: На ключ (id)=(2) всё ещё есть ссылки в таблице "ownership".
+	at kotiki.controllers.controllers.FriendshipControllerTest.deleteFriendshipTest(FriendshipControllerTest.java:41)
+
