@@ -1,0 +1,9 @@
+kotiki\dao\repos\OwnerRepo.class
+kotiki\dao\entities\Owner.class
+kotiki\dao\entities\Cat.class
+kotiki\dao\repos\CatRepo.class
+kotiki\dao\entities\Ownership.class
+kotiki\dao\repos\FriendshipRepo.class
+kotiki\dao\repos\OwnershipRepo.class
+kotiki\dao\entities\Cat$COLOUR.class
+kotiki\dao\entities\Friendship.class

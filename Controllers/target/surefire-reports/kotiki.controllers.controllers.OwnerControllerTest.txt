@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: kotiki.controllers.controllers.OwnerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.073 s <<< FAILURE! - in kotiki.controllers.controllers.OwnerControllerTest
+addOwnerTest  Time elapsed: 0.003 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at kotiki.controllers.controllers.OwnerControllerTest.addOwnerTest(OwnerControllerTest.java:48)
+Caused by: org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at kotiki.controllers.controllers.OwnerControllerTest.addOwnerTest(OwnerControllerTest.java:48)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at kotiki.controllers.controllers.OwnerControllerTest.addOwnerTest(OwnerControllerTest.java:48)
+Caused by: org.postgresql.util.PSQLException: 
+ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "owners_pkey"
+  Подробности: Ключ "(id)=(2)" уже существует.
+	at kotiki.controllers.controllers.OwnerControllerTest.addOwnerTest(OwnerControllerTest.java:48)
+

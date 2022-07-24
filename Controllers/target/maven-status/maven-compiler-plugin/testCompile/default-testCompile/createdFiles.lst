@@ -1,0 +1,4 @@
+kotiki\controllers\controllers\OwnerControllerTest.class
+kotiki\controllers\controllers\CatControllerTest.class
+kotiki\controllers\controllers\OwnershipControllerTest.class
+kotiki\controllers\controllers\FriendshipControllerTest.class
