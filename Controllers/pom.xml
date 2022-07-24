@@ -77,6 +77,8 @@
                 <version>2.7.0</version>
             </plugin>
         </plugins>
+
+        <finalName>kotiki</finalName>
     </build>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
